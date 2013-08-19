@@ -2,6 +2,5 @@
   (:require [clojure.test :refer :all]
             [app.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest can-get-cell-contents
+	(is (= ( get-cell 2 2) 1)))
